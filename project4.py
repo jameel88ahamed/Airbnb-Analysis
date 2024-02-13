@@ -25,7 +25,7 @@ with st.sidebar:
                                    "nav-link-selected": {"background-color": "#FF5A5F"}})
    
 #GETTING CONNECTION WITH MDB
-client = pymongo.MongoClient("mongodb+srv://Jameel123:Jameel123@nosql.7dz8wop.mongodb.net/?retryWrites=true&w=majority")
+client = pymongo.MongoClient("Enter your shell key")
 db = client.sample_airbnb
 col = db.listingsAndReviews
 
