@@ -21,7 +21,7 @@ Data Cleaning and Preparation: Cleaning the Airbnb dataset by handling missing v
 Geospatial Visualization: Developing a streamlit web application that utilizes the geospatial data from the Airbnb dataset to create interactive maps. Visualizing the distribution of listings across different locations, allowing users to explore prices, ratings, and other relevant factors.
 
 ## Step 4:
-Price Analysis and Visualization: Using the cleaned data to analyze and visualize how prices vary across different locations, property types, and seasons. Creating dynamic plots and charts that enable users to explore price trends, outliers, and correlations with other variables.
+Price Analysis and Visualization: Using the cleaned data to analyze and visualize how prices vary across different locations, & property types. Creating dynamic plots and charts that enable users to explore price trends, outliers, and correlations with other variables.
 
 ## Step 5:
 Location-Based Insights: Investigating how the price of listings varies across different locations. Visualizing these insights on interactive maps and creating dashboards in tools like Tableau.
