@@ -25,7 +25,7 @@ with st.sidebar:
                                    "nav-link-selected": {"background-color": "#FF5A5F"}})
    
 #GETTING CONNECTION WITH MDB
-client = pymongo.MongoClient("Enter your command key")
+client = pymongo.MongoClient("mongodb+srv://Jameel123:Jameel123@nosql.7dz8wop.mongodb.net/?retryWrites=true&w=majority")
 db = client.sample_airbnb
 col = db.listingsAndReviews
 
@@ -118,7 +118,7 @@ if Menu == "Overview":
             st.plotly_chart(fig,use_container_width=True)
 
             # TOTAL LISTINGS BY COUNTRY CHOROPLETH MAP
-            df4 = df.query(requirements).groupby(['Country'],as_index=False)['Name'].count().rename(columns={'Name' : 'Total_Listings'})
+            df4 = df.query(requirements).groupby(['Country'],as_index=False)['Listing_Name'].count().rename(columns={'Listing_Name' : 'Total_Listings'})
             fig = px.choropleth(df4,
                                 title='Total Listings in each Country',
                                 locations='Country',
@@ -237,7 +237,7 @@ if Menu == "Explore":
         fig = px.scatter_mapbox(df, 
                         lat='Latitude', 
                         lon='Longitude',
-                        hover_name='Name',
+                        hover_name='Listing_Name',
                         title='Distribution of Listings In Maps',
                         mapbox_style='open-street-map',
                         zoom=0.0001)
